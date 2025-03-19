@@ -1,0 +1,26 @@
+>>> def divide_ten(num):
+...     return 10 / num
+...
+>>> divide_ten(5)
+2.0
+>>> divide_ten(0)
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "<stdin>", line 2, in divide_ten
+ZeroDivisionError: division by zero
+>>> from unittest import TestCase
+>>> case = TestCase()
+>>> with case.assertRaises(ZeroDivisionError):
+...     divide_ten(0)
+...
+>>> with case.assertRaises(ValueError):
+...     divide_ten(5)
+...
+2.0
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "python3.11/unittest/case.py", line 262, in __exit__
+    self._raiseFailure("{} not raised".format(exc_name))
+  File "python3.11/unittest/case.py", line 199, in _raiseFailure
+    raise self.test_case.failureException(msg)
+AssertionError: ValueError not raised

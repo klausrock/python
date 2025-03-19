@@ -1,0 +1,10 @@
+>>> from redirect import RedirectStdout
+>>> with open("trapped.txt", "w") as file:
+...     with RedirectStdout(file):
+...         print("I'm inside a box")
+...     print("Outside the box")
+...
+Outside the box
+>>> from pathlib import Path
+>>> Path("trapped.txt").read_text()
+"I'm inside a box\n"

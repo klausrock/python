@@ -1,0 +1,8 @@
+>>> from writable import writable_file
+>>> with writable_file("output.txt") as file:
+...     file.write("You again?")
+...
+10
+>>> from pathlib import Path
+>>> Path("output.txt").read_text()
+'You again?'

@@ -1,0 +1,30 @@
+>>> from bonjour import BonjourLeMonde
+>>> with BonjourLeMonde:
+...     print("Fetchez la vache!")
+...
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+TypeError: 'type' object does not support the context manager protocol
+>>> with BonjourLeMonde():
+...     print("Fetchez la vache!")
+...
+Entering context
+Fetchez la vache!
+Leaving context
+>>> with BonjourLeMonde() as message:
+...     print("Fetchez la vache!", message)
+...
+Entering context
+Fetchez la vache! Salut
+Leaving context
+>>> with BonjourLeMonde():
+...     print("Fetchez la vache!")
+...     raise ValueError("Cow not found")
+...
+Entering context
+Fetchez la vache!
+Exception occurred in context <class 'ValueError'> Cow not found <traceback object at 0x108ef6340>
+Leaving context
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+ValueError: Cow not found

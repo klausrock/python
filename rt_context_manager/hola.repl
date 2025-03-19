@@ -1,0 +1,6 @@
+>>> from hola import HolaMundo
+>>> with HolaMundo():
+...     raise ValueError("Nada")
+...
+Entering context
+Exception occurred in context <class 'ValueError'> Nada <traceback object at 0x1025b2080>

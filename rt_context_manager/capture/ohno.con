@@ -1,0 +1,11 @@
+$ cat hello.txt
+Hello Oscar,
+
+How are you today?
+$ python ohno.py hello.txt
+$ cat hello.txt.ohno
+Hell🚫 Oscar,
+
+H🚫w are y🚫u t🚫day?
+$ python ohno.py hello.txt
+A file error occured. [Errno 17] File exists: 'hello.txt.ohno'

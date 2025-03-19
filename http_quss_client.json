@@ -1,0 +1,28 @@
+{
+	"Client License" : {
+		"Licensee" : "Klaus Rock",
+		"City" : "Aalen",
+		"ZIP" : "73432",
+		"Street" : "Bonhoefferstrasse 37",
+		"Country" : "Germany",
+		"License Number SHA-256" : "352c82377e0a1b3ee7b0b89e3c4f13e0820d8b90da0c12d876c2c42fca6e5cee",
+		"License ID" : 123456789,
+		"Valid" : "31.12.2019",
+		"Latitude" : "49.4478",
+		"Longitude" : "11.0683",
+		"TCP Port" : 10000,
+		"Max Clients" : 1
+	},
+	"HTTP-QuSS Server 1" : {
+		"City" : "Duesseldorf",
+		"Country" : "Germany",
+		"Latitude" : "51.2217",
+		"Longitude" : "6.7762",
+		"IPv4" : "89.163.145.74",
+		"IPv6" : "2001 : db8: 3333 : 4444 : 5555 : 6666 : 7777 : 8888",
+		"UPD Port" : 50080,
+		"Bandwidth Mbit/s" : 5,
+		"MTU 1500" : -6,
+		"RTT x 100" : 1
+	}
+}

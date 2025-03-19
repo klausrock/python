@@ -1,0 +1,11 @@
+>>> 0.3 / 0.1
+2.9999999999999996
+>>> from decimal import Decimal
+>>> Decimal("0.1") / Decimal("0.3")
+Decimal('0.3333333333333333333333333333')
+>>> from decimal import localcontext()
+>>> with localcontext() as ctx:
+...     ctx.prec = 42
+...     Decimal("0.1") / Decimal("0.3")
+...
+Decimal('0.333333333333333333333333333333333333333333')
